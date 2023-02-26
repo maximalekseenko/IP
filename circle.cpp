@@ -6,9 +6,8 @@
 
 
 
-circle::circle (){
+circle::circle (){}
 
-}
 
 circle::circle (float r, float x, float y){
     this->radius = r;
