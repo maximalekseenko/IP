@@ -15,7 +15,7 @@ void triangle::set (double a1, double b1, double c1){
 }
 
 void triangle::show (){
-    std::cout << "triangle with sides: " << this->a << " " << this->b << " " << this->c << std::endl;
+    std::cout << "<triangle at " << this << " with sides: " << this->a << " " << this->b << " " << this->c << ">" << std::endl;
 }
 
 double triangle::perimetr (){
