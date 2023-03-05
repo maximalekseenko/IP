@@ -1,8 +1,15 @@
 #include <iostream>
+#include <vector>
+
 #include "eq2.h"
+#include "rational.h"
 
 
 int main(){
+
+    std::cout << "--------------------------------------" << std::endl;
+    std::cout << "---------- +++ TASK 001 +++ ----------" << std::endl;
+
     eq2 A, B, C;
     double a, b, c, x;
 
@@ -30,6 +37,26 @@ int main(){
     std::cout << &A << " + " << &B << ":" << std::endl;
     std::cout << " x is " << C.find_X() << std::endl;
     std::cout << " y is " << C.find_Y(x) << std::endl;
+
+
+    std::cout << "--------------------------------------" << std::endl;
+    std::cout << "---------- +++ TASK 002 +++ ----------" << std::endl;
+
+    std::vector<rational> rationals;
+
+    // input
+    for (int i = 0; i < 3; i ++){
+        rational _rational;
+        std::cout << "input a and b for a rational at " << &_rational << std::endl;
+        std::cin >> a >> b;
+        _rational.set(a, b);
+        rationals.push_back(_rational);
+    }
+
+    // output
+    for (auto _rational : rationals){
+        _rational.show();
+    }
 
     
 }
