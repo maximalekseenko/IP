@@ -5,7 +5,7 @@ mkdir ./build
 cd ./build
 
 # compile
-g++ -std=c++11 -c ../*.cpp
+g++ -std=c++17 -c ../*.cpp
 
 # link
 g++ *.o
