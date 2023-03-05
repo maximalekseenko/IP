@@ -58,5 +58,28 @@ int main(){
         _rational.show();
     }
 
+    std::cout << "--------------------------------------" << std::endl;
+    std::cout << "---------- +++ TASK 003 +++ ----------" << std::endl;
+
+    rational r1, r2;
+
+    // input
+    std::cout << "input a and b for a rational at " << &r1 << std::endl;
+    std::cin >> a >> b;
+    r1.set(a, b);
+    std::cout << "input a and b for a rational at " << &r2 << std::endl;
+    std::cin >> a >> b;
+    r2.set(a, b);
+
+    //output
+    std::cout << &r1 << " + " << &r2 << " = ";
+    (r1 + r2).show();
+    std::cout << &r1 << " - " << &r2 << " = ";
+    (r1 - r2).show();
+    std::cout << &r1 << " ++ " << " = ";
+    (r1++).show();
+    std::cout << &r1 << " == " << &r2 << " = " << (r1 == r2) << std::endl;
+    std::cout << &r1 << " > " << &r2 << " = " << (r1 > r2) << std::endl;
+    std::cout << &r1 << " < " << &r2 << " = " << (r1 < r2) << std::endl;
     
 }

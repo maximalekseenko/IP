@@ -29,3 +29,27 @@ void rational::set (int a1, int b1){
 void rational::show (){
     std::cout << "<rational " << this->a << "/" << this->b <<" at " << this << ">" << std::endl;
 }
+
+rational rational::operator+(rational& _obj){
+    return rational(this->a * _obj.b + _obj.a * this->b, this->b * _obj.b);
+}
+
+rational rational::operator-(rational& _obj){
+    return rational(this->a * _obj.b - _obj.a * this->b, this->b * _obj.b);
+}
+
+rational rational::operator++(int){
+    return this->set(this->a + 1, this->b);
+}
+
+bool rational::operator==(rational& _obj){
+    return (this->a == _obj.a) && (this->b == _obj.b);
+}
+
+bool rational::operator>(rational& _obj){
+    return this->a * _obj.b > _obj.a * this->b;
+}
+
+bool rational::operator<(rational& _obj){
+    return this->a * _obj.b < _obj.a * this->b;
+}

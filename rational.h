@@ -7,4 +7,11 @@ class rational{
         rational (int a1, int b1);
         void set (int a1, int b1);
         void show ();
+
+        rational operator+(rational& _obj);
+        rational operator-(rational& _obj);
+        rational operator++(int);
+        bool operator==(rational& _obj);
+        bool operator>(rational& _obj);
+        bool operator<(rational& _obj);
 };
