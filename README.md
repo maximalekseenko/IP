@@ -4,4 +4,4 @@ Each homework is stored in different branches.
 
 To run program use `build-and-run.sh`. Notice, that upon finish build directory will be removed.
 
-To use, you will need c++ (>11) compiler.
+To use, you will need c++ (>17) compiler.
