@@ -24,6 +24,7 @@ double eq2::find_X (){
     if (D < 0) return 0;
     if (D == 0) return (-b + sqrt(this->D)) / (2 * this->a);
     if (D > 0) return std::max((-b + sqrt(this->D)) / (2 * this->a), (-b - sqrt(this->D)) / (2 * this->a));
+    return 0;
 }
 
 double eq2::find_Y (double x1){
