@@ -6,10 +6,7 @@
 #include "figure.h"
 
 
-int main(){
-
-    std::cout << "--------------------------------------" << std::endl;
-    std::cout << "---------- +++ TASK 001 +++ ----------" << std::endl;
+int task2(){
 
     triangle triangles[3];
 
@@ -22,20 +19,7 @@ int main(){
             _triangle.set(a, b, c);
         }
     }
-
-    // output
-    for (triangle& _triangle: triangles){
-        _triangle.show();
-        std::cout << " perimeter is " << _triangle.perimetr() << std::endl;
-        std::cout << " square is " << _triangle.square() << std::endl;
-        
-    }
-
-
-
-    std::cout << "--------------------------------------" << std::endl;
-    std::cout << "---------- +++ TASK 002 +++ ----------" << std::endl;
-
+    
     std::vector<circle> circles;
 
     // input
@@ -67,30 +51,5 @@ int main(){
         }
     }
 
-
-    std::cout << "--------------------------------------" << std::endl;
-    std::cout << "---------- +++ TASK 003 +++ ----------" << std::endl;
-
-    std::vector<figure> figures;
-
-    // input
-    double x1, x2, x3, x4, y1, y2, y3, y4;
-    for (int i = 0; i < 3; i ++){
-        std::cout << "input x1, x2, x3, x4, y1, y2, y3, y4 for a figure" << std::endl;
-        std::cin >> x1 >> x2 >> x3 >> x4 >> y1 >> y2 >> y3 >> y4;
-        figures.push_back(figure(x1, x2, x3, x4, y1, y2, y3, y4));
-    }
-
-    // output
-    for (figure& _figure : figures){
-        _figure.show();
-
-        std::cout << " prug " << _figure.is_prug() << std::endl;
-        std::cout << " square " << _figure.is_square() << std::endl;
-        std::cout << " romb " << _figure.is_romb() << std::endl;
-        std::cout << " in circle " << _figure.is_in_circle() << std::endl;
-        std::cout << " out circle " << _figure.is_out_circle() << std::endl;
-    }
+    return 1;   
 }
-
-
