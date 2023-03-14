@@ -79,7 +79,7 @@ bool figure::is_in_circle(){
     float side2 = sqrt(pow(this->x2 - this->x3, 2) + pow(this->y2 - this->y3, 2));
     float side3 = sqrt(pow(this->x3 - this->x4, 2) + pow(this->y3 - this->y4, 2));
     float side4 = sqrt(pow(this->x4 - this->x1, 2) + pow(this->y4 - this->y1, 2));
-    return side1 + side3 == side2 + side4
+    return side1 + side3 == side2 + side4;
 }
 
 bool figure::is_out_circle(){
@@ -88,7 +88,7 @@ bool figure::is_out_circle(){
     float side3 = sqrt(pow(this->x3 - this->x4, 2) + pow(this->y3 - this->y4, 2));
     float side4 = sqrt(pow(this->x4 - this->x1, 2) + pow(this->y4 - this->y1, 2));
     float diagonale1 = sqrt(pow(this->x1 - this->x3, 2) + pow(this->y1 - this->y3, 2));
-    float diagonale1 = sqrt(pow(this->x2 - this->x4, 2) + pow(this->y2 - this->y4, 2));
-    return diagonale1 * diagonale1 == side1 * side3 + side2 * side4;
+    float diagonale2 = sqrt(pow(this->x2 - this->x4, 2) + pow(this->y2 - this->y4, 2));
+    return diagonale1 * diagonale2 == side1 * side3 + side2 * side4;
 }
 
