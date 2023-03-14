@@ -10,7 +10,6 @@ class rational{
 
         rational operator+(rational& _obj);
         rational operator-(rational& _obj);
-        rational operator++(int);
         bool operator==(rational& _obj);
         bool operator>(rational& _obj);
         bool operator<(rational& _obj);
