@@ -7,7 +7,6 @@
 
 
 int task2(){
-
     triangle triangles[3];
 
     // input
@@ -19,7 +18,7 @@ int task2(){
             _triangle.set(a, b, c);
         }
     }
-    
+
     std::vector<circle> circles;
 
     // input

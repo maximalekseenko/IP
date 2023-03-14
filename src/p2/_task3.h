@@ -28,6 +28,6 @@ int task3(){
         std::cout << " in circle " << _figure.is_in_circle() << std::endl;
         std::cout << " out circle " << _figure.is_out_circle() << std::endl;
     }
-    
+
     return 1;   
 }
